@@ -1,0 +1,143 @@
+:root {
+    --main-color: #B78D65;
+    --bg-black-color: #252525;
+    --text-gray-color: #777;
+    --card-color: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-gray-color)
+
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.text-main {
+    color: var(--main-color)
+}
+
+.bg-black {
+    background-color: var(--bg-black-color);
+}
+
+.text-black {
+    color: var(--bg-black-color)
+}
+
+.text-gray {
+    color: var(--text-gray-color)
+}
+
+.bg-card {
+    background-color: var(--card-color);
+}
+
+.max-size {
+    font-size: 50px;
+}
+
+.card {
+    border: none
+}
+
+/* Start features */
+.features {
+    padding-top: 100px;
+}
+
+.feature {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.feature .card-img {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    background-color: white;
+}
+
+.feature .card-img:hover {
+    background-color: var(--bg-black-color);
+}
+
+/* Start about  */
+.about {
+    padding-top: 100px;
+}
+
+.about .about-img {
+    position: relative;
+}
+
+.about .about-img::before {
+    left: 50%;
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    border: 5px solid var(--main-color);
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+.about .about-img img {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.about .about-img img:first-child {
+    top: -7%;
+}
+
+.about .about-img img:last-child {
+    left: 30%;
+    top: 23%;
+}
+
+.years h1 {
+    border: 5px solid var(--main-color);
+    padding: 15px;
+    font-weight: bolder;
+}
+
+/* Start services */
+.services {
+    padding-top: 100px;
+}
+
+/* Start our projects  */
+.our-projects .box {
+    padding: 30px 50px;
+}
+
+/* Start team  */
+.team {
+    padding-top: 100px;
+}
+
+/* start appointment  */
+.appointment input,
+.appointment textarea,
+.appointment select {
+    border-radius: 0;
+    border-color: var(--text-gray-color);
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    border: none;
+}
